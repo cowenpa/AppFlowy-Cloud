@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Florian Rolke Coaching - Hero Section</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f0e6; /* warm beige */
+    /* placeholder pattern image */
+    background-image: url('../assets/images/peruvian_tapestry_pattern.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem;
+  }
+
+  .hero-illustration {
+    flex: 1;
+    text-align: center;
+  }
+
+  .hero-copy {
+    flex: 1;
+    max-width: 540px;
+  }
+
+  .headline {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #23374d; /* deep blue */
+    margin-bottom: 1rem;
+  }
+
+  .subheadline {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  .cta-group {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+
+  .cta-primary {
+    background-color: #ff7e2d; /* marmalade orange */
+    color: #fff;
+  }
+
+  .cta-secondary {
+    background-color: #23374d; /* deep blue */
+    color: #fff;
+  }
+
+  .icon-wrapper {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .icon {
+    width: 32px;
+    transition: transform 0.2s;
+  }
+
+  .icon:hover {
+    transform: translateY(-4px);
+  }
+</style>
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-illustration">
+      <img src="../assets/images/florian_paddington_breakfast.svg" alt="Illustration of Florian with Paddington-style breakfast" width="380">
+    </div>
+    <div class="hero-copy">
+      <h1 class="headline">Polite doesn’t mean passive. Focused doesn’t mean boring.</h1>
+      <p class="subheadline">If a small bear from Peru can win over a country with kindness and a suitcase, imagine what <em>you</em> could do with clarity and calm execution.</p>
+      <div class="cta-group">
+        <button class="cta-button cta-primary">Start Your Expedition</button>
+        <button class="cta-button cta-secondary">Watch Florian’s Story</button>
+      </div>
+      <div class="icon-wrapper">
+        <img src="../assets/images/suitcase_icon.svg" class="icon" alt="suitcase icon">
+        <img src="../assets/images/teacup_icon.svg" class="icon" alt="teacup icon">
+        <img src="../assets/images/marmalade_icon.svg" class="icon" alt="marmalade jar icon">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
